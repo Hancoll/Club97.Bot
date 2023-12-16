@@ -17,7 +17,7 @@ new TelegramBotClient(token).StartReceiving(
     receiverOptions: receiverOptions,
     cancellationToken: cts.Token);
 
-Console.ReadKey();
+Console.Read();
 cts.Cancel();
 
 Task HandlePollingErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)

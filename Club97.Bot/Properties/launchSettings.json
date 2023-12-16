@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Club97.Bot": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

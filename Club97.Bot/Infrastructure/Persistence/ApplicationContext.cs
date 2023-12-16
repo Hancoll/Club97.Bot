@@ -5,7 +5,7 @@ namespace Club97.Bot.Infrastructure.Persistence;
 
 internal class ApplicationContext : IApplicationContext
 {
-    private const string connectionString = "mongodb://127.0.0.1:27017";
+    private const string connectionString = "mongodb://mongo:27017";
     private const string databaseName = "Club";
     private const string usersCollectionName = "Users";
 
