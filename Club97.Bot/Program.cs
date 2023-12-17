@@ -20,7 +20,7 @@ new TelegramBotClient(token).StartReceiving(
 while (true)
 {
     Console.WriteLine("press ctrl + c to exit");
-    Console.Read();
+    Thread.Sleep(10000);
 }
 
 Task HandlePollingErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
