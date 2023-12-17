@@ -28,7 +28,7 @@ internal class UsersRepostitory
             Id = userId,
             Username = username,
             ChatId = chatId,
-            Balance = 500
+            Balance = 0
         };
 
         await applicationContext.Users.InsertOneAsync(user);
