@@ -17,11 +17,10 @@ new TelegramBotClient(token).StartReceiving(
     receiverOptions: receiverOptions,
     cancellationToken: cts.Token);
 
+Console.WriteLine("press ctrl + c to exit");
+
 while (true)
-{
-    Console.WriteLine("press ctrl + c to exit");
-    Thread.Sleep(10000);
-}
+    Console.ReadKey();
 
 Task HandlePollingErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
 {
